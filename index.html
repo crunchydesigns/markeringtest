@@ -8,13 +8,15 @@
     <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0; overflow: hidden;">
-    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
+    <!-- A-Frame AR.js 장면 설정 -->
+    <a-scene embedded arjs="trackingMethod: artoolkit; sourceType: webcam; debugUIEnabled: false;">
+        
         <!-- 사용자 정의 마커 설정 -->
         <a-marker type="pattern" url="https://crunchydesigns.github.io/markeringtest/pattern-marker.patt">
             <!-- 트래킹된 이미지 위에 나타날 텍스트 -->
             <a-text value="Hello, AR!" position="0 0.5 0" scale="5 5 5" color="black" rotation="-90 0 0"></a-text>
         </a-marker>
-        
+
         <!-- 카메라 설정 -->
         <a-entity camera></a-entity>
     </a-scene>
