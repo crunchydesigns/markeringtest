@@ -12,15 +12,9 @@
     <a-scene embedded arjs="trackingMethod: artoolkit; sourceType: webcam; debugUIEnabled: false;">
         
         <!-- 사용자 정의 마커 설정 -->
-        <a-marker
-        id="animated-marker"
-        type="pattern"
-        preset="custom"
-        url="https://crunchydesigns.github.io/markeringtest/pattern-camera.patt"
-        raycaster="objects: .clickable"
-        emitevents="true"
-        cursor="fuse: false; rayOrigin: mouse;"
-      >
+        <a-marker-camera type="pattern" url="https://crunchydesigns.github.io/markeringtest/pattern-mark.patt">
+            <a-entity myobject></a-entity>
+      </a-marker-camera>
     <a-text value="Hello, AR!" position="0 0.5 0" scale="5 5 5" color="black" rotation="-90 0 0"></a-text>
 </a-marker>
 
