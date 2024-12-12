@@ -10,7 +10,7 @@
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam;">
         <!-- 사용자 정의 마커 설정 -->
-        <a-marker-camera type="pattern" url="https://crunchydesigns.github.io/markeringtest/pattern-camera.patt">
+        <a-marker-camera preset="custom" type="pattern" url="https://crunchydesigns.github.io/markeringtest/anothercamera.patt">
             <!-- 트래킹된 이미지 위에 나타날 텍스트 -->
             <a-text value="Hello, AR!" position="0 1.5 0" scale="5 5 5" color="black" rotation="-90 0 0"></a-text>
         </a-marker-camera>
