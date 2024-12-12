@@ -12,8 +12,7 @@
     <a-scene embedded arjs="trackingMethod: artoolkit; sourceType: webcam; debugUIEnabled: false;">
         
         <!-- 사용자 정의 마커 설정 -->
-        <a-marker type="pattern" url="pattern-marker.patt">
-         <a-entity myobject></a-entity>
+        <a-marker-camera preset='custom' type='pattern' url='camera.patt'></a-marker-camera>
     <a-text value="Hello, AR!" position="0 0.5 0" scale="5 5 5" color="black" rotation="-90 0 0"></a-text>
 </a-marker>
 
